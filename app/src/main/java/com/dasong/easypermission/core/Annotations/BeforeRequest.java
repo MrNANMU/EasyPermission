@@ -1,4 +1,4 @@
-package com.dasong.easypermission.core;
+package com.dasong.easypermission.core.Annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

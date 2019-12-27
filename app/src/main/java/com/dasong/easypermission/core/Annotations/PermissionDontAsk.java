@@ -1,4 +1,4 @@
-package com.dasong.easypermission.core;
+package com.dasong.easypermission.core.Annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -8,6 +8,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Target(METHOD)
 @Retention(RUNTIME)
-public @interface PermissionGranted {
+public @interface PermissionDontAsk {
     String value() default "";
 }

@@ -1,20 +1,18 @@
 package com.dasong.easypermission.example;
 
 import android.Manifest;
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.dasong.easypermission.core.BeforeRequest;
-import com.dasong.easypermission.core.EasyPermission;
-import com.dasong.easypermission.core.PermissionDenied;
-import com.dasong.easypermission.core.PermissionDontAsk;
-import com.dasong.easypermission.core.PermissionGranted;
-import com.dasong.easypermission.core.RequestPermission;
+import com.dasong.easypermission.core.Annotations.BeforeRequest;
+import com.dasong.easypermission.core.old.EasyPermission;
+import com.dasong.easypermission.core.Annotations.PermissionDenied;
+import com.dasong.easypermission.core.Annotations.PermissionDontAsk;
+import com.dasong.easypermission.core.Annotations.PermissionGranted;
+import com.dasong.easypermission.core.Annotations.RequestPermission;
 
 
 @RequestPermission({Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.CAMERA})

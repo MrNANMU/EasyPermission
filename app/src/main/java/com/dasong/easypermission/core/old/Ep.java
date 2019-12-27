@@ -1,4 +1,4 @@
-package com.dasong.easypermission.core;
+package com.dasong.easypermission.core.old;
 
 import android.app.Activity;
 import android.os.Build;
@@ -8,6 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 
+import com.dasong.easypermission.core.Annotations.BeforeRequest;
+import com.dasong.easypermission.core.Annotations.PermissionDenied;
+import com.dasong.easypermission.core.Annotations.PermissionDontAsk;
+import com.dasong.easypermission.core.Annotations.PermissionGranted;
+import com.dasong.easypermission.core.Annotations.RequestPermission;
 import com.dasong.easypermission.example.LogUtils;
 
 import java.lang.reflect.InvocationTargetException;
