@@ -5,9 +5,6 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import androidx.collection.ArrayMap;
-
-import java.util.Map;
 
 public class EasyPermission {
 
@@ -33,7 +30,7 @@ public class EasyPermission {
      * @param activity
      */
     public static void init(Activity activity){
-        getInstance().mPoster = new Poster(Poster.MODE_LASY,activity);
+        getInstance().mPoster = new Poster(Poster.MODE_LAZY,activity);
     }
 
     public static void post(){

@@ -4,7 +4,7 @@ import android.app.Activity;
 
 public class Poster {
 
-    public static final int MODE_LASY = 0;
+    public static final int MODE_LAZY = 0;
     public static final int MODE_REQUEST = 1;
 
     private int mode;
