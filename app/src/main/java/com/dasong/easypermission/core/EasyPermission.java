@@ -49,10 +49,12 @@ public class EasyPermission {
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     public static void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-
+        getInstance().mPoster.onRequestPermissionsResult(requestCode,permissions,grantResults);
     }
 
-    public static void clear(Activity activity){
-
+    public static void clear(){
+        getInstance().mPoster.clear();
+        getInstance().mPoster = null;
     }
+
 }

@@ -2,6 +2,7 @@ package com.dasong.easypermission.example;
 
 import android.Manifest;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
