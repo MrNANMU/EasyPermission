@@ -8,6 +8,8 @@ import androidx.annotation.RequiresApi;
 
 public class EasyPermission {
 
+    //重构一下
+
     private EasyPermission mEp;
     private Poster mPoster;
 
