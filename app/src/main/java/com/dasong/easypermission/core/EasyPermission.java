@@ -11,7 +11,7 @@ public class EasyPermission {
     //重构一下
 
     private EasyPermission mEp;
-    private Poster mPoster;
+    private Worker mWorker;
 
     private EasyPermission(){
 
@@ -32,7 +32,7 @@ public class EasyPermission {
      * @param activity
      */
     public static void init(Activity activity){
-        getInstance().mPoster = new Poster(Poster.MODE_LAZY,activity);
+        getInstance().mWorker = new Worker(Worker.MODE_LAZY,activity);
     }
 
     public static void post(){
@@ -44,17 +44,17 @@ public class EasyPermission {
     }
 
     public static void request(Activity activity){
-        getInstance().mPoster = new Poster(Poster.MODE_REQUEST,activity);
+        getInstance().mWorker = new Worker(Worker.MODE_REQUEST,activity);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     public static void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        getInstance().mPoster.onRequestPermissionsResult(requestCode,permissions,grantResults);
+        getInstance().mWorker.onRequestPermissionsResult(requestCode,permissions,grantResults);
     }
 
     public static void clear(){
-        getInstance().mPoster.clear();
-        getInstance().mPoster = null;
+        getInstance().mWorker.clear();
+        getInstance().mWorker = null;
     }
 
 }

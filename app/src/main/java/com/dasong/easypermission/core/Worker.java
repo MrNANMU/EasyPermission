@@ -24,7 +24,7 @@ import androidx.core.app.ActivityCompat;
 
 import static androidx.core.content.PermissionChecker.PERMISSION_DENIED;
 
-public class Poster {
+public class Worker {
 
     public static final int MODE_LAZY = 0;
     public static final int MODE_REQUEST = 1;
@@ -43,7 +43,7 @@ public class Poster {
     private Method parameterDeniedMethod; //无注解参数拒绝的方法
     private Method parameterDontAskMethod;//无注解参数不再提示的方法
 
-    public Poster(int mode, Activity activity) {
+    public Worker(int mode, Activity activity) {
         this.mode = mode;
         this.activity = activity;
         this.lock = new CountDownLatch(1);
